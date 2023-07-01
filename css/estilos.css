@@ -23,7 +23,7 @@ body{
 
 .header{
     height: 100vh;
-    background: linear-gradient(90deg, rgba(29, 0, 36, 0.5) 0%, rgba(6, 134, 44, 0.377) 35%, rgba(0, 255, 64, 0.322) 100%), url(../img/fondo-tech.jpg);
+    background: linear-gradient(90deg, rgba(29, 0, 36, 0.5) 0%, rgba(6, 134, 44, 0.377) 35%, rgba(0, 255, 64, 0.322) 100%), url(../img/fondo-tech.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
