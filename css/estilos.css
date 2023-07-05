@@ -245,6 +245,8 @@ body{
 }
 
 .cuadrado-blanco {
+    height: 70%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -350,6 +352,35 @@ footer{
         font-size: 40px;
     }
 
+    .cuadrado-blanco {
+        width: 90%;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .agregar-imagen {
+        height: auto; 
+        width: 100%; 
+        object-fit: cover;
+        max-height: calc(100% - 40px);
+        border-radius: 10px;
+    }
+
+    .close{
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        width: 40px;
+        cursor: pointer;
+    }
+
+    .texto-imagen {
+        margin-top: 5px;
+        font-size: 16px;
+        text-align: center;
+    }
+
     .contenedor-servicio img{
         width: 80%;
         margin-bottom: 40px;
@@ -411,6 +442,25 @@ footer{
     .menu{
         top: 20px;
         right: 20px;
+    }
+
+    .cuadrado-blanco {
+        height: 90%;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .agregar-imagen {
+        height: auto; 
+        width: 100%; 
+        object-fit: cover;
+        max-height: calc(100% - 40px);
+        border-radius: 10px;
+    }
+
+    .texto-imagen {
+        font-size: 15.5px;
     }
     
     .titulo{
