@@ -23,7 +23,7 @@ body{
 
 .header{
     height: 100vh;
-    background: linear-gradient(90deg, rgba(29, 0, 36, 0.5) 0%, rgba(6, 134, 44, 0.377) 35%, rgba(0, 255, 64, 0.322) 100%), url(../img/fondo-tech.webp);
+    background: linear-gradient(90deg, rgba(29, 0, 36, 0.5) 0%, rgba(6, 134, 44, 0.4) 35%, rgba(0, 255, 64, 0.45) 100%), url(../img/fondo-tech.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -79,14 +79,14 @@ body{
 }
 
 .titulo{
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.5);
     font-size: 60px;
+    color: rgb(255, 255, 255);
     margin-bottom: 15px;
 }
 
 .copy{
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.925);
-    font-weight: 300;
+    color: #ffffff;
+    font-weight: 400;
     font-size: 25px;
 }
 
@@ -105,6 +105,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 20vh;
 }
 
 .contenedor-servicio img{
@@ -203,7 +204,7 @@ body{
 .cont-virtud{
     width: 30%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .cont-virtud img{
@@ -212,9 +213,19 @@ body{
     margin: auto;
 }
 
+.animacion:hover {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+.animacion-perfil {
+    animation: backInDown;
+    animation-duration: 2s;
+}
+
 .n-virtud{
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
     font-weight: 400;
 }
@@ -406,8 +417,13 @@ footer{
         align-self: center;
     }
 
+    .cont-perfil{
+        margin-bottom: 30px;
+    }
+
     .cont-virtud{
         width: 80%;
+        margin-bottom: 40px;
     }
 
     .footer-content{

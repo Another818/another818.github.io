@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script src="js/index.js"></script>
 </head>
 <body>
@@ -22,8 +26,8 @@
         <nav class="menu-navegacion">
             <a href="#inicio">Inicio</a>
             <a href="#portafolio">Portafolio</a>
-            <a href="#servicio">Servicio</a>
             <a href="#sobre_mi">Sobre Mí</a>
+            <a href="#servicio">Servicio</a>
             <a href="#contacto">Contacto</a>
         </nav>
         <div class="contenedor head">
@@ -45,31 +49,11 @@
                 </div>
             </div>
         </section>
-        <section class="contenedor" id="servicio">
-            <h2 class="subtitulo">Nuestro servicio</h2>
-            <div class="contenedor-servicio">
-                <img src="img/Checklist.svg" alt="Checklist">
-                <div class="checklist-servicio">
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">1</span> Desarrollo de Software a medida</h3>
-                        <p>Comparte tus ideas y crearemos un programa a medida para ti.</p>
-                    </div>
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">2</span> Desarrollo de Base de Datos (SQL)</h3>
-                        <p>Analizaremos su gestión y encontraremos las áreas de oportunidad para desarrollar la base de datos que se adapte a sus necesidades.</p>
-                    </div>
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">3</span> Mantenimiento de Software</h3>
-                        <p>Realizaremos la adecuada instalación y mantenimiento para que el programa siempre este en óptimas condiciones.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contenedor" id="sobre_mi">
+        <section class="contenedor cont-sobremi" id="sobre_mi">
             <h2 class="subtitulo">Sobre Mí</h2>
             <div class="contenido">
                 <section class="virtudes">
-                    <div class="cont-virtud">
+                    <div class="cont-virtud animacion">
                         <figure class="myFigure">
                             <img src="img/Code Development.svg" alt="Development" class="img-virtud">
                             <figcaption class="hidden">En mi enfoque de codificación en .NET, fusiono 
@@ -82,7 +66,7 @@
                         </figure>
                         <h3 class="n-virtud">Coding</h3>
                     </div>
-                    <div class="cont-virtud">
+                    <div class="cont-virtud animacion">
                         <figure class="myFigure">
                             <img src="img/Team building.svg" alt="Team building" class="img-virtud">
                             <figcaption class="hidden">En mi trayectoria con .NET, he experimentado el poder del trabajo en equipo. 
@@ -94,7 +78,7 @@
                         </figure>
                         <h3 class="n-virtud">Team Work</h3>
                     </div>
-                    <div class="cont-virtud">
+                    <div class="cont-virtud animacion">
                         <figure class="myFigure">
                             <img src="img/Artificial Intelligence.svg" alt="AI" class="img-virtud">
                             <figcaption class="hidden">Como desarrollador de .NET, tengo experiencia 
@@ -107,7 +91,7 @@
                         </figure>
                         <h3 class="n-virtud">Manejo de APIS's</h3>
                     </div>
-                    <div class="cont-virtud">
+                    <div class="cont-virtud animacion">
                         <figure class="myFigure">
                             <img src="img/Data and settings.svg" alt="Data" class="img-virtud">
                             <figcaption class="hidden">Como profesional de .NET, tengo experiencia 
@@ -124,6 +108,26 @@
                     <h3 class="n-perfil" id="n-perfil"></h3>
                 </div>
                 
+            </div>
+        </section>
+        <section class="contenedor" id="servicio">
+            <h2 class="subtitulo">Servicio</h2>
+            <div class="contenedor-servicio">
+                <img src="img/Checklist.svg" alt="Checklist">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span> Desarrollo de Software a medida</h3>
+                        <p>Comparte tus ideas y crearemos un programa a medida para ti.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span> Desarrollo de Base de Datos (SQL)</h3>
+                        <p>Analizaremos su gestión y encontraremos las áreas de oportunidad para desarrollar la base de datos que se adapte a sus necesidades.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span> Mantenimiento de Software</h3>
+                        <p>Realizaremos la adecuada instalación y mantenimiento para que el programa siempre este en óptimas condiciones.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="imagen-light">
@@ -160,6 +164,7 @@
     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
     crossorigin="anonymous"></script>
     <script src="js/menu.js"></script>
+    <script src="js/aniScroll.js"></script>
     <script src="js/lightbox.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
