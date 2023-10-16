@@ -1,62 +1,79 @@
 <!DOCTYPE html>
-<html lang= "es">
+<html lang="es">
 <head>
+    <!-- Configuración de la página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
         name="description"
-        content="Página creada para mostrar mí portafolio personal como desarollador
-        .Net con lenguaje C# y otros lenguajes.">
+        content="Página creada para mostrar mí portafolio personal como desarollador Full Stack con lenguajes cómo C#, Python, JavaScript, etc.">
     <title>Portafolio .Net</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Enlaces a recursos externos -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Agregando Tailwind CSS -->
+    <link rel="stylesheet" href="./css/estilos.css"> <!-- Agregando tu archivo CSS personalizado -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Agregando Boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> <!-- Agregando el script de Boxicons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Configurando preconexión a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Configurando preconexión a Google Fonts con atributo crossorigin -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> <!-- Agregando Google Fonts -->
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <script src="js/index.js"></script>
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+    /> <!-- Agregando la hoja de estilos de animate.css -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!-- Agregando la hoja de estilos de Slick Carousel -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> <!-- Agregando la hoja de estilos de Slick Carousel (tema) -->
+    <script src="js/index.js"></script> <!-- Agregando tu archivo JavaScript personalizado -->
 </head>
+
 <body>
+
     <header class="header" id="inicio">
-        <img src="img/bxMenu-.svg" alt="" class="menu">
+        <img src="img/bxMenu-.svg" alt="" class="menu"> <!-- Imagen del menú -->
         <nav class="menu-navegacion">
-            <a href="#inicio">Inicio</a>
-            <a href="#portafolio">Portafolio</a>
-            <a href="#sobre_mi">Sobre Mí</a>
-            <a href="#servicio">Servicio</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#inicio">Inicio</a> <!-- Enlace al inicio de la página -->
+            <a href="#portafolio">Portafolio</a> <!-- Enlace a la sección de portafolio -->
+            <a href="#sobre_mi">Sobre Mí</a> <!-- Enlace a la sección "Sobre Mí" -->
+            <a href="#servicio">Servicio</a> <!-- Enlace a la sección de servicios -->
+            <a href="#contacto">Contacto</a> <!-- Enlace a la sección de contacto -->
         </nav>
         <div class="contenedor head">
-            <h1 class="titulo">¡Haz realidad tus necesidades de Gestión de Datos!</h1>
-            <p class="copy">Desarrollamos Software de Gestión de Datos a medida.</p>
+            <h1 class="titulo">¡Haz realidad tus necesidades de Gestión de Datos!</h1> <!-- Título principal -->
+            <p class="copy">Desarrollamos Software de Gestión de Datos a medida.</p> <!-- Copia descriptiva -->
         </div>
     </header>
+
     <main>
         <section class="gallery" id="portafolio">
-            <div class="contenedor">
-                <h2 class="subtitulo">Proyectos</h2>
-                <div class="contenedor-galeria">
-                    <a href="https://github.com/Another818/AsistenteVirtual" target="_blank" id="git1">
-                        <img src="img/AsistenteVir.webp" alt="Asistente Virtual" class="img-galeria">
-                    </a>
-                    <a href="https://github.com/Another818/Proyecto_6" target="_blank" id="git2">
-                        <img src="img/profenix.webp" alt="Vivero fenix" class="img-galeria">
-                    </a>
+            <div class="container xl:max-w-screen-xl mx-auto my-8 px-20 pb-8"> <!-- Contenedor principal -->
+                <h2 class="subtitulo pt-12">Proyectos</h2> <!-- Título de la sección "Proyectos" -->
+                <div class="slick-carousel">
+                    <!-- Agrega tus diapositivas aquí -->
+                    <div>
+                        <a href="https://github.com/Another818/AsistenteVirtual" target="_blank" id="git1">
+                            <img src="img/AsistenteVir.webp" alt="Asistente Virtual" class="img-galeria">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/Another818/Proyecto_6" target="_blank" id="git2">
+                            <img src="img/profenix.webp" alt="Vivero fenix" class="img-galeria">
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
         </section>
+
         <section class="contenedor cont-sobremi" id="sobre_mi">
-            <h2 class="subtitulo">Sobre Mí</h2>
+            <h2 class="subtitulo">Sobre Mí</h2> <!-- Título de la sección "Sobre Mí" -->
             <div class="contenido">
                 <section class="virtudes">
                     <div class="cont-virtud animacion">
                         <figure class="myFigure">
                             <img src="img/Code Development.svg" alt="Development" class="img-virtud">
-                            <figcaption class="hidden">En mi enfoque de codificación en .NET, fusiono 
+                            <figcaption class="hidden text-white">En mi enfoque de codificación en .NET, fusiono 
                                 creatividad y precisión para dar vida a soluciones tecnológicas efectivas. 
                                 A través de un proceso colaborativo, transformo ideas en código eficiente y 
                                 escalable, buscando constantemente la excelencia en cada línea de código. 
@@ -64,24 +81,24 @@
                                 productos de calidad que impulsen el éxito de los proyectos.
                             </figcaption>
                         </figure>
-                        <h3 class="n-virtud">Coding</h3>
+                        <h3 class="n-virtud text-white">Coding</h3>
                     </div>
                     <div class="cont-virtud animacion">
                         <figure class="myFigure">
                             <img src="img/Team building.svg" alt="Team building" class="img-virtud">
-                            <figcaption class="hidden">En mi trayectoria con .NET, he experimentado el poder del trabajo en equipo. 
+                            <figcaption class="hidden text-white">En mi trayectoria con .NET, he experimentado el poder del trabajo en equipo. 
                                 Colaborar con profesionales apasionados y comunicarse eficazmente nos ha permitido superar desafíos 
                                 y ofrecer soluciones innovadoras. Creo firmemente que el trabajo en equipo 
                                 potencia nuestras habilidades individuales y nos impulsa a alcanzar resultados excepcionales 
                                 juntos.
                             </figcaption>
                         </figure>
-                        <h3 class="n-virtud">Team Work</h3>
+                        <h3 class="n-virtud text-white">Team Work</h3>
                     </div>
                     <div class="cont-virtud animacion">
                         <figure class="myFigure">
                             <img src="img/Artificial Intelligence.svg" alt="AI" class="img-virtud">
-                            <figcaption class="hidden">Como desarrollador de .NET, tengo experiencia 
+                            <figcaption class="hidden text-white">Como desarrollador de .NET, tengo experiencia 
                                 en el manejo de APIs, aprovechando su potencial para integrar servicios
                                 web y mejorar la funcionalidad de mis aplicaciones. He trabajado con 
                                 diversas APIs, realizando consultas, envío y recepción de datos, y 
@@ -89,62 +106,70 @@
                                 y conectadas, brindando una experiencia de usuario mejorada.
                             </figcaption>
                         </figure>
-                        <h3 class="n-virtud">Manejo de APIS's</h3>
+                        <h3 class="n-virtud text-white">Manejo de APIS's</h3>
                     </div>
                     <div class="cont-virtud animacion">
                         <figure class="myFigure">
                             <img src="img/Data and settings.svg" alt="Data" class="img-virtud">
-                            <figcaption class="hidden">Como profesional de .NET, tengo experiencia 
+                            <figcaption class="hidden text-white">Como profesional de .NET, tengo experiencia 
                                 en la gestión de datos, desde la recolección hasta el análisis. 
                                 Utilizo técnicas avanzadas para garantizar la integridad y disponibilidad 
                                 de los datos, desbloqueando su valor y permitiendo decisiones informadas.
                             </figcaption>
                         </figure>
-                        <h3 class="n-virtud">Gestión de datos</h3>
+                        <h3 class="n-virtud text-white">Gestión de datos</h3>
                     </div>
                 </section>
                 <div class="cont-perfil">
                     <img src= "" id="ImgPerfil" class="imagen-perfil" alt="Imagen Perfil">
-                    <h3 class="n-perfil" id="n-perfil"></h3>
+                    <h3 class="n-perfil text-white" id="n-perfil"></h3>
                 </div>
                 
             </div>
         </section>
+
         <section class="contenedor" id="servicio">
-            <h2 class="subtitulo">Servicio</h2>
+            <h2 class="subtitulo">Servicio</h2> <!-- Título de la sección "Servicio" -->
             <div class="contenedor-servicio">
                 <img src="img/Checklist.svg" alt="Checklist">
                 <div class="checklist-servicio">
-                    <div class="service">
+                    <div class="service text-white">
                         <h3 class="n-service"><span class="number">1</span> Desarrollo de Software a medida</h3>
                         <p>Comparte tus ideas y crearemos un programa a medida para ti.</p>
                     </div>
-                    <div class="service">
+                    <div class = "service text-white">
                         <h3 class="n-service"><span class="number">2</span> Desarrollo de Base de Datos (SQL)</h3>
                         <p>Analizaremos su gestión y encontraremos las áreas de oportunidad para desarrollar la base de datos que se adapte a sus necesidades.</p>
                     </div>
-                    <div class="service">
+                    <div class="service text-white">
                         <h3 class="n-service"><span class="number">3</span> Mantenimiento de Software</h3>
                         <p>Realizaremos la adecuada instalación y mantenimiento para que el programa siempre este en óptimas condiciones.</p>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="imagen-light">
-            <img src="img/bxClose.svg" alt="" class="close">
+            <img src="img/bxClose.svg" alt="" class="close"> <!-- Botón para cerrar la imagen en la vista de luz -->
             <div class="cuadrado-blanco">
-                <img src="" alt="Virtud" class="agregar-imagen">
-                <p class="texto-imagen"></p>
+                <img src="" alt="Virtud" class="agregar-imagen"> <!-- Imagen en la vista de luz -->
+                <p class="texto-imagen"></p> <!-- Texto descriptivo de la imagen en la vista de luz -->
             </div>
         </section>
+
     </main>
+    
     <footer id="contacto">
+
         <div class="contenedor footer-content">
+
             <div class="contact-us">
                 <h2 class="brand">AuroraSoftware</h2>
                 <p>Somos expertos en la creación y gestión de Software.</p>
             </div>
+
             <div class="social-media">
+
                 <a href="https://github.com/Another818" target="_blank" class="social-media-icon">
                     <i class='bx bxl-github'></i>
                 </a>
@@ -154,18 +179,27 @@
                 <a href="https://www.instagram.com/aurorasoftware06/" target="_blank" class="social-media-icon">
                     <i class='bx bxl-instagram'></i>
                 </a>
+
             </div>
+
         </div>
+
         <div class="line"></div>
-    </footer>
 
     <script
     src="https://code.jquery.com/jquery-3.7.0.min.js"
     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-    crossorigin="anonymous"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/aniScroll.js"></script>
-    <script src="js/lightbox.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> <!-- Agregando jQuery -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- Agregando Slick Carousel -->
+    
+    <script>
+        $(document).ready(function(){
+            $(".slick-carousel").slick(); // Inicializando el carrusel
+        });
+    </script>
+    
+    <script src="js/menu.js"></script> <!-- Agregando tu archivo JavaScript para el menú -->
+    <script src="js/aniScroll.js"></script> <!-- Agregando tu archivo JavaScript para animaciones de desplazamiento -->
+    <script src="js/lightbox.js"></script> <!-- Agregando tu archivo JavaScript para la vista de luz -->
 </body>
 </html>

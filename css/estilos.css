@@ -10,6 +10,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    background: #3f3e3e;
 }
 
 .contenedor{
@@ -23,7 +24,7 @@ body{
 
 .header{
     height: 100vh;
-    background: linear-gradient(90deg, rgba(29, 0, 36, 0.5) 0%, rgba(6, 134, 44, 0.4) 35%, rgba(0, 255, 64, 0.45) 100%), url(../img/fondo-tech.webp);
+    background: linear-gradient(90deg, rgba(29, 0, 36, 0.5) 0%, rgba(6, 134, 44, 0.4) 35%, rgba(0, 255, 64, 0.45) 100%), url(../img/background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -42,6 +43,7 @@ body{
 }
 
 .menu{
+    z-index: 1000;
     position: fixed;
     top: 30px;
     right: 30px;
@@ -54,6 +56,7 @@ body{
 }
 
 .menu-navegacion{
+    z-index: 1000;
     position: fixed;
     top: 0;
     right: 0;
@@ -95,7 +98,7 @@ body{
 .subtitulo{
     text-align: center;
     font-weight: 300;
-    color: #017e35;
+    color: #ffffff;
     margin-bottom: 40px;
     font-size: 40px;
 }
@@ -141,7 +144,7 @@ body{
 /* Portafolio */
 
 .gallery{
-    background: #f2f2f2;
+    background: #5f5e5e;
 }
 
 .contenedor-galeria {
@@ -162,6 +165,7 @@ body{
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
     cursor: pointer;
 }
+
 
 /* Virtudes (Sobre Mi) */
 
