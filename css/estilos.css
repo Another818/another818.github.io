@@ -13,33 +13,16 @@ body{
     background: #3f3e3e;
 }
 
-.contenedor{
-    width: 90%;
-    max-width: 1200px;
-    overflow: hidden;
-    margin: auto;
-    padding: 60px 0;
-}
+
 
 
 .header{
     height: 100vh;
-    background: linear-gradient(90deg, rgba(29, 0, 36, 0.5) 0%, rgba(6, 134, 44, 0.4) 35%, rgba(0, 255, 64, 0.45) 100%), url(../img/background.webp);
+    background: linear-gradient(90deg, rgba(29, 0, 36, 0.7) 0%, rgba(29, 0, 36, 0.7) 35%, rgba(29, 0, 36, 0.7) 100%), url(../img/background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-}
-
-.head{
-    text-align: center;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #ffffff;
 }
 
 .menu{
@@ -81,17 +64,6 @@ body{
     text-decoration: none;
 }
 
-.titulo{
-    font-size: 60px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 15px;
-}
-
-.copy{
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 25px;
-}
 
 /* Mi servicio */
 
@@ -101,14 +73,6 @@ body{
     color: #ffffff;
     margin-bottom: 40px;
     font-size: 40px;
-}
-
-.contenedor-servicio{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 20vh;
 }
 
 .contenedor-servicio img{
@@ -147,17 +111,6 @@ body{
     background: #5f5e5e;
 }
 
-.contenedor-galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el tamaño mínimo y máximo de las columnas */
-    grid-gap: 15px; /* Ajusta el espacio deseado entre las imágenes */
-    justify-items: center; /* Centra horizontalmente las imágenes */
-}
-
-.contenedor-galeria a {
-    display: block;
-}
-
 .img-galeria {
     object-fit: cover;
     max-width: 100%;
@@ -169,12 +122,6 @@ body{
 
 /* Virtudes (Sobre Mi) */
 
-.contenido {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Alinea los elementos a la derecha */
-    flex-direction: row-reverse; /* Invierte el orden de los elementos */
-}
 
 .cont-perfil{
     width: 70%;
@@ -260,14 +207,6 @@ body{
 }
 
 .cuadrado-blanco {
-    height: 70%;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
     transform: scale(0);
     transition: transform .3s .2s;
 }
@@ -313,15 +252,6 @@ footer{
     color: #fff;
 }
 
-.brand{
-    font-weight: 500;
-    font-size: 40px;
-}
-
-.brand+p{
-    font-weight: 500;
-}
-
 .social-media{
     width: 50%;
     display: flex;
@@ -350,8 +280,8 @@ footer{
 }
 
 .line{
-    width: 90%;
-    max-width: 1200px;
+    width: 97%;
+    max-width: 1300px;
     margin: 0 auto;
     height: 2px;
     background: #fff;
@@ -407,12 +337,6 @@ footer{
 
     .service{
         margin-bottom: 30px;
-    }
-
-    .contenido {
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
     }
     
     .imagen-perfil {

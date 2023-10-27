@@ -39,36 +39,137 @@
             <a href="#servicio">Servicio</a> <!-- Enlace a la sección de servicios -->
             <a href="#contacto">Contacto</a> <!-- Enlace a la sección de contacto -->
         </nav>
-        <div class="contenedor head">
-            <h1 class="titulo">¡Haz realidad tus necesidades de Gestión de Datos!</h1> <!-- Título principal -->
-            <p class="copy">Desarrollamos Software de Gestión de Datos a medida.</p> <!-- Copia descriptiva -->
+        <div class="container flex items-start justify-center text-start flex-col p-0 h-5/6 px-5">
+            <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white">Pablo Tomás<!-- --> 
+                <span class="text-orange-500">Menna</span>
+            </h1>
+            <p class="mb-4 text-lg font-normal lg:text-xl text-white">Estudiante de Ingeniería en Sistemas de Información, aficionado por el mundo de la programación y la ciencia de datos.</p>
+            
+            <div class="inline-flex pt-4">
+                <div>
+                    <a href="#contacto">
+                        <button type="button" class="inline-flex items-center mr-5 text-white bg-orange-600 hover:bg-orange-700 focus:ring-orange-800 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 focus:outline-none"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 mr-2" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z"></path><path d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z"></path></svg>Contactame</button>
+                    </a>
+                    
+                </div>
+
+                <a href="https://onedrive.live.com/download?resid=D5DB82698276E2AD%2113711&authkey=!AA4wmPrv9tQio4Y&em=2">
+                    <button type="button" class="text-orange-600 inline-flex items-center focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 bg-white hover:bg-gray-200 focus:outline-none focus:ring-orange-800"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 mr-2" viewBox="0 0 24 24" style="fill: rgba(255, 155, 0, 1);"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>Descargar CV</button>
+                </a>
+
+            </div>
         </div>
     </header>
 
     <main>
         <section class="gallery" id="portafolio">
-            <div class="container xl:max-w-screen-xl mx-auto my-8 px-20 pb-8"> <!-- Contenedor principal -->
+            <div class="container md:max-w-screen-lg lg:max-w-screen-xl mx-auto my-8 px-20 pb-8"> <!-- Contenedor principal -->
                 <h2 class="subtitulo pt-12">Proyectos</h2> <!-- Título de la sección "Proyectos" -->
-                <div class="slick-carousel">
-                    <!-- Agrega tus diapositivas aquí -->
-                    <div>
-                        <a href="https://github.com/Another818/AsistenteVirtual" target="_blank" id="git1">
-                            <img src="img/AsistenteVir.webp" alt="Asistente Virtual" class="img-galeria">
-                        </a>
+                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-14">
+
+                    <div class="slick-carousel">
+                        <!-- Agrega tus diapositivas aquí -->
+
+                        <div>
+                            <img src="img/Imagenes Portafolio/AsistenteVirtual/1.jpg" alt="Vivero fenix" class="img-galeria">
+                        </div>
+
+                        <div class="relative">
+                            
+                            <img src="img/Imagenes Portafolio/AsistenteVirtual//2.jpg" alt="Asistente Virtual" class="img-galeria">
+                            
+                            <div class="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50 text-white">
+                                <h1 class="text-lg font-bold mb-2 sm:text-2xl md:text-lg lg:text-2xl">Asistente virtual para PC.</h1>
+                                <p class="mb-4 px-2 text-xs sm:text-base md:text-xs lg:text-base xl:text-xl">Este proyecto surge de la idea de integrar ChatGpt y otras comodades de asistencia a Windows.</p>
+                                <a href="" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-xs sm:text-base md:text-xs lg:text-base text-white font-bold py-2 px-4 rounded" id="git1">Learn more</a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="img/Imagenes Portafolio/AsistenteVirtual/3.jpg" alt="Vivero fenix" class="img-galeria">
+                        </div>
+                        
+                        <div>
+                            <img src="img/Imagenes Portafolio/AsistenteVirtual/4.jpg" alt="Vivero fenix" class="img-galeria">
+                        </div>
+
                     </div>
-                    <div>
-                        <a href="https://github.com/Another818/Proyecto_6" target="_blank" id="git2">
-                            <img src="img/profenix.webp" alt="Vivero fenix" class="img-galeria">
-                        </a>
+                    <div class="slick-carousel-2">
+                        <!-- Agrega tus diapositivas aquí -->
+                        <div>
+                            <img src="img/Imagenes Portafolio/Proyecto_6/1.png" alt="Asistente Virtual" class="img-galeria">
+                        </div>
+
+                        <div class="relative">
+                            
+                            <img src="img/Imagenes Portafolio/Proyecto_6/2.png" alt="Vivero fenix" class="img-galeria">
+                            
+                            <div class="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50 text-white">
+                                <h1 class="text-lg font-bold mb-2 sm:text-2xl md:text-lg lg:text-2xl">Ejemplo de Vivero Feniz CRUD.</h1>
+                                <p class="mb-4 px-2 text-xs sm:text-base md:text-xs lg:text-base xl:text-xl">CRUD creado cómo proyecto final de secundaría.</p>
+                                <a href="" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-xs sm:text-base md:text-xs lg:text-base text-white font-bold py-2 px-4 rounded" id="git2">Learn more</a>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <img src="img/Imagenes Portafolio/Proyecto_6/3.png" alt="Asistente Virtual" class="img-galeria">
+                        </div>
+                        
                     </div>
-                    
+                    <div class="slick-carousel-3">
+                        <!-- Agrega tus diapositivas aquí -->
+
+                        <div>
+                            <img src="img/Imagenes Portafolio/crud_asp_net/1.jpg" alt="Asistente Virtual" class="img-galeria">
+                        </div>
+
+                        <div class="relative">
+                            
+                            <img src="img/Imagenes Portafolio/crud_asp_net/2.jpg" alt="Asistente Virtual" class="img-galeria">
+                            
+                            <div class="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50 text-white">
+                                <h1 class="text-lg font-bold mb-2 sm:text-2xl md:text-lg lg:text-2xl">CRUD ASP.NET</h1>
+                                <p class="mb-4 px-2 text-xs sm:text-base md:text-xs lg:text-base xl:text-xl">Proyecto creado para la finalización de curso intermedio de ASP.NET.</p>
+                                <a href="" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-xs sm:text-base md:text-xs lg:text-base text-white font-bold py-2 px-4 rounded" id="git3">Learn more</a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <img src="img/Imagenes Portafolio/crud_asp_net/3.jpg" alt="Asistente Virtual" class="img-galeria">
+                        </div>
+                        
+                    </div>
+                    <div class="slick-carousel-4">
+                        <!-- Agrega tus diapositivas aquí -->
+
+                        <div>
+                            <img src="img/Imagenes Portafolio/crud_django_react/1.jpg" alt="Asistente Virtual" class="img-galeria">
+                        </div>
+
+                        <div class="relative">
+                            
+                            <img src="img/Imagenes Portafolio/crud_django_react/2.jpg" alt="Asistente Virtual" class="img-galeria">
+                            
+                            <div class="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50 text-white">
+                                <h1 class="text-lg font-bold mb-2 sm:text-2xl md:text-lg lg:text-2xl">CRUD Django con React.</h1>
+                                <p class="mb-4 px-2 text-xs sm:text-base md:text-xs lg:text-base xl:text-xl">Proyecto de practica con Django con React (Back-End, API'S, Front-End).</p>
+                                <a href="" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-xs sm:text-base md:text-xs lg:text-base text-white font-bold py-2 px-4 rounded" id="git4">Learn more</a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <img src="img/Imagenes Portafolio/crud_django_react/3.jpg" alt="Asistente Virtual" class="img-galeria">
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="contenedor cont-sobremi" id="sobre_mi">
+        <section class="container xl:max-w-screen-xl mx-auto my-8 px-10 cont-sobremi" id="sobre_mi">
             <h2 class="subtitulo">Sobre Mí</h2> <!-- Título de la sección "Sobre Mí" -->
-            <div class="contenido">
+            <div class="flex items-center justify-center flex-col-reverse sm:flex-row-reverse sm:items-center sm:justify-end">
                 <section class="virtudes">
                     <div class="cont-virtud animacion">
                         <figure class="myFigure">
@@ -128,9 +229,9 @@
             </div>
         </section>
 
-        <section class="contenedor" id="servicio">
+        <section class="container xl:max-w-screen-xl mx-auto my-8" id="servicio">
             <h2 class="subtitulo">Servicio</h2> <!-- Título de la sección "Servicio" -->
-            <div class="contenedor-servicio">
+            <div class="flex items-center justify-evenly flex-wrap mb-12">
                 <img src="img/Checklist.svg" alt="Checklist">
                 <div class="checklist-servicio">
                     <div class="service text-white">
@@ -151,8 +252,8 @@
 
         <section class="imagen-light">
             <img src="img/bxClose.svg" alt="" class="close"> <!-- Botón para cerrar la imagen en la vista de luz -->
-            <div class="cuadrado-blanco">
-                <img src="" alt="Virtud" class="agregar-imagen"> <!-- Imagen en la vista de luz -->
+            <div class="cuadrado-blanco h-3/4 w-11/12 flex items-center justify-between	p-5 bg-white rounded-xl	">
+                <img src="" alt="Virtud" class="agregar-imagen w-3/5 md:w-2/5 lg:w-2/5 xl:w-3/5"> <!-- Imagen en la vista de luz -->
                 <p class="texto-imagen"></p> <!-- Texto descriptivo de la imagen en la vista de luz -->
             </div>
         </section>
@@ -161,14 +262,16 @@
     
     <footer id="contacto">
 
-        <div class="contenedor footer-content">
+        <div class="container xl:max-w-screen-xl mx-auto my-8 footer-content">
 
             <div class="contact-us">
-                <h2 class="brand">AuroraSoftware</h2>
-                <p>Somos expertos en la creación y gestión de Software.</p>
+                <h2 class="mb-4 px-5 text-2xl font-bold leading-none tracking-tight sm:text-4xl lg:text-5xl text-white">Pablo Tomás<!-- --> 
+                    <span class="text-orange-500">Menna</span>
+                </h2>
+                <p class="px-5">Forjando mi carrera como programador, paso a paso.</p>
             </div>
 
-            <div class="social-media">
+            <div class="social-media px-2">
 
                 <a href="https://github.com/Another818" target="_blank" class="social-media-icon">
                     <i class='bx bxl-github'></i>
@@ -194,7 +297,18 @@
     
     <script>
         $(document).ready(function(){
-            $(".slick-carousel").slick(); // Inicializando el carrusel
+            $(".slick-carousel").slick({
+                initialSlide: 1
+            }); // Inicializando el carrusel
+            $(".slick-carousel-2").slick({
+                initialSlide: 1
+            });
+            $(".slick-carousel-3").slick({
+                initialSlide: 1
+            });
+            $(".slick-carousel-4").slick({
+                initialSlide: 1
+            });
         });
     </script>
     
