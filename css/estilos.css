@@ -143,15 +143,6 @@ body{
     font-weight: 400;
 }
 
-.virtudes{
-    margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-
-}
-
 .cont-virtud{
     width: 30%;
     text-align: center;
@@ -236,15 +227,6 @@ body{
 footer{
     background: #039463;
     padding-bottom: 0.1px;
-}
-
-.footer-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 40px;
 }
 
 .contact-us{
@@ -354,10 +336,6 @@ footer{
         margin-bottom: 40px;
     }
 
-    .footer-content{
-        justify-content: center;
-    }
-
     .social-media{
         width: 80%;
         justify-content: space-evenly;
@@ -371,11 +349,6 @@ footer{
         margin-left: 0;
     }
     
-    .contact-us{
-        text-align: center;
-        width: 80%;
-        margin-bottom: 40px;
-    }
 }
 
 @media screen and (max-width:500px){
@@ -419,7 +392,4 @@ footer{
         width: 100%;
     }
 
-    .contact-us{
-        width: 90%;
-    }
 }
