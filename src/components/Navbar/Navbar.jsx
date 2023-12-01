@@ -15,7 +15,7 @@ function Navbar() {
             <header className="bg-orange-600 w-full fixed z-50 py-3 mb-7 shadow-md">
                 <div className="container mx-auto flex items-center justify-between">
                     <a href="/" className="flex items-center">
-                        <img src="/src/img/Logo.png" className="me-2" width={60} height={60} alt="Logo"/>
+                        <img src="/img/Logo.png" className="me-2" width={60} height={60} alt="Logo"/>
                         <span className="text-xl font-bold text-white">Tomás Menna</span>
                     </a>
 
