@@ -25,7 +25,7 @@ const LightboxComponent = () => {
         <div className='flex flex-wrap mr-5 items-center justify-evenly'>
             <div className="cont-virtud animacion" onClick={handleLightboxClick}>
                 <figure className="myFigure">
-                    <img src="/src/img/Code Development.svg" alt="Development" className="img-virtud"/>
+                    <img src="/img/Code Development.svg" alt="Development" className="img-virtud"/>
                     <figcaption className="hidden text-white">En mi enfoque de desarrollo de software, 
                         fusiono creatividad y precisión para dar vida a soluciones tecnológicas efectivas. 
                         A través de un proceso colaborativo, transformo ideas en código eficiente y escalable, 
@@ -38,7 +38,7 @@ const LightboxComponent = () => {
             </div>
             <div className="cont-virtud animacion" onClick={handleLightboxClick}>
                 <figure className="myFigure">
-                    <img src="/src/img/Team building.svg" alt="Team building" className="img-virtud"/>
+                    <img src="/img/Team building.svg" alt="Team building" className="img-virtud"/>
                     <figcaption className="hidden text-white">En mi trayectoria en el mundo del desarrollo de software, 
                         he experimentado el poder del trabajo en equipo. Colaborar con profesionales apasionados 
                         y comunicarse eficazmente nos ha permitido superar desafíos y ofrecer soluciones innovadoras. Creo firmemente que el trabajo en equipo potencia nuestras habilidades individuales y nos impulsa a alcanzar resultados excepcionales juntos.
@@ -48,7 +48,7 @@ const LightboxComponent = () => {
             </div>
             <div className="cont-virtud animacion" onClick={handleLightboxClick}>
                 <figure className="myFigure">
-                    <img src="/src/img/Artificial Intelligence.svg" alt="AI" className="img-virtud"/>
+                    <img src="/img/Artificial Intelligence.svg" alt="AI" className="img-virtud"/>
                     <figcaption className="hidden text-white">Como desarrollador en el campo del desarrollo de 
                         software, tengo experiencia en el manejo de APIs, aprovechando su potencial para 
                         integrar servicios web y mejorar la funcionalidad de mis aplicaciones. He trabajado 
@@ -61,7 +61,7 @@ const LightboxComponent = () => {
             </div>
             <div className="cont-virtud animacion" onClick={handleLightboxClick}>
                 <figure className="myFigure">
-                    <img src="/src/img/Data and settings.svg" alt="Data" className="img-virtud"/>
+                    <img src="/img/Data and settings.svg" alt="Data" className="img-virtud"/>
                     <figcaption className="hidden text-white">Como desarrollador, tengo experiencia 
                         en la gestión de datos, desde la recolección hasta el análisis. 
                         Utilizo técnicas avanzadas para garantizar la integridad y disponibilidad 
@@ -74,7 +74,7 @@ const LightboxComponent = () => {
             {
                 lightboxVisible && (
                     <div className="imagen-light">
-                        <img src="/src/img/bxClose.svg" alt="" className="close" onClick={() => setLightboxVisible(false)}/>
+                        <img src="/img/bxClose.svg" alt="" className="close" onClick={() => setLightboxVisible(false)}/>
                         <div className="cuadrado-blanco h-3/4 w-11/12 flex items-center justify-between p-5 bg-white rounded-xl">
                             <img src={lightboxImage} alt="Virtud" className="w-3/5 md:w-2/5 lg:w-2/5 xl:w-3/5"/>
                             <p>{lightboxText}</p>

@@ -107,14 +107,14 @@ const TablasComponent = () => {
                     </thead>
                     <tbody>
                         <tr className="hover:bg-slate-600 text-slate-300">
-                            <td className="flex items-center p-4"><img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2 rounded-full bg-white" src="/src/img/proa.svg"/> Escuelas ProA</td>
+                            <td className="flex items-center p-4"><img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2 rounded-full bg-white" src="/img/proa.svg"/> Escuelas ProA</td>
                             <td className="p-4">Bachiller en Desarrollo de Software</td>
                             <td className="p-4">2015</td>
                             <td className="p-4">2021</td>
                         </tr>
                         <tr className="hover:bg-slate-600 hover:rounded-lg text-slate-300">
                             <td className="flex items-center p-4">
-                                <img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2 rounded-full bg-white" src="/src/img/utn.svg"/>
+                                <img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2 rounded-full bg-white" src="/img/utn.svg"/>
                                     Universidad Tecnológica Nacional
                             </td>                                                                                                         
                             <td className="p-4">Ingeniero en Sistemas de Información</td>
@@ -161,7 +161,7 @@ const TablasComponent = () => {
                             </td>
                             <td className="hover:bg-slate-600 p-4">
                                 <div className="flex items-center gap-2">
-                                    <img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2" src="/src/img/mysql.svg"/> MySql
+                                    <img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2" src="/img/mysql.svg"/> MySql
                                 </div> 
                             </td>
                             <td className="hover:bg-slate-600 p-4">
@@ -183,7 +183,7 @@ const TablasComponent = () => {
                             </td>
                             <td className="hover:bg-slate-600 p-4">
                                 <div className="flex items-center gap-2">
-                                    <img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2" src="/src/img/c-sharp.svg"/> C#
+                                    <img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2" src="/img/c-sharp.svg"/> C#
                                 </div> 
                             </td>
                             <td className="hover:bg-slate-600 p-4">
