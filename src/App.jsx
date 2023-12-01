@@ -11,10 +11,9 @@ function App() {
             <Navbar/>
 
             <main className='mb-36'>
-                <section className="dark:bg-slate-200 bg-gray-900 bg-opacity-75" id="portafolio">
+                <section className="" id="portafolio">
                     <div className="container md:max-w-screen-lg lg:max-w-screen-xl mx-auto my-8 px-20 pb-8"> 
                         <h2 className="subtitulo pt-12">Proyectos</h2> 
-
                         <SimpleSliders/>
                     </div>
                 </section>
@@ -52,13 +51,13 @@ function App() {
 
                     <div className="social-media px-2">
 
-                        <a href="https://github.com/Another818" target="_blank" rel='noreferrer' className="social-media-icon animacion">
+                        <a href="https://github.com/Another818" target="_blank" rel='noreferrer' className="hover:bg-orange-400 inline-block ml-5 w-16 h-16 border-2 border-orange-500 rounded-full text-center animacion">
                             <box-icon type='logo' name='github'></box-icon>
                         </a>
-                        <a href="https://www.linkedin.com/in/tomás-menna" target="_blank" rel='noreferrer' className="social-media-icon animacion">
+                        <a href="https://www.linkedin.com/in/tomás-menna" target="_blank" rel='noreferrer' className="hover:bg-orange-400 inline-block ml-5 w-16 h-16 border-2 border-orange-500 rounded-full text-center animacion">
                             <box-icon type='logo' name='linkedin-square'></box-icon>
                         </a>
-                        <a href="https://www.instagram.com/aurorasoftware06/" target="_blank" rel='noreferrer' className="social-media-icon animacion">
+                        <a href="https://www.instagram.com/aurorasoftware06/" target="_blank" rel='noreferrer' className="hover:bg-orange-400 inline-block ml-5 w-16 h-16 border-2 border-orange-500 rounded-full text-center animacion">
                             <box-icon type='logo' name='instagram'></box-icon>
                         </a>
 

@@ -1,18 +1,13 @@
 import React, { useState } from 'react'
+import Typewriter from 'typewriter-effect';
 import "./Navbar.css";
 
 function Navbar() {
 
-    const [showList, setShowList] = useState(false)
-
-    const handleShowList = () =>{
-        setShowList(!showList)
-    }
-
     
     return (
         <div>
-            <header className="bg-orange-600 w-full fixed z-50 py-3 mb-7 shadow-md">
+            <header className="bg-orange-500 w-full fixed z-50 py-3 mb-7 shadow-md">
                 <div className="container mx-auto flex items-center justify-between">
                     <a href="/" className="flex items-center">
                         <img src="/img/Logo.png" className="me-2" width={60} height={60} alt="Logo"/>
@@ -41,12 +36,19 @@ function Navbar() {
                             Menna
                         </span>
                     </h1>
-                    <p className="mb-4 text-lg font-normal lg:text-xl text-white animate__animated animate__backInUp">
-                        Estudiante de Ingeniería en Sistemas de Información, apasionado por el mundo de la programación.
-                    </p>
+                    <div className="mb-4 text-lg font-normal lg:text-xl text-white animate__animated animate__backInUp">
+                        <Typewriter
+                            options={{
+                                strings: ['Estudiante de Ingeniería en Sistemas de Información, apasionado por el mundo de la programación.', 'Programador Full Stack', 'Desarrollador de Software'],
+                                autoStart: true,
+                                loop: true,
+                                deleteSpeed: 1,
+                            }}
+                        />
+                    </div>
                     <div className="inline-flex pt-4">
                         <div>
-                            <a href="#contacto"><button type="button" className="inline-flex items-center mr-5 text-white bg-orange-600 hover:bg-orange-700 focus:ring-orange-800 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 focus:outline-none"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 mr-2" viewBox="0 0 24 24" style={{fill: "#ffffff"}}><path d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z"></path><path d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z"></path></svg>Contactame</button>
+                            <a href="#contacto"><button type="button" className="inline-flex items-center mr-5 text-white bg-orange-500 hover:bg-orange-600 focus:ring-orange-700 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 focus:outline-none"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 mr-2" viewBox="0 0 24 24" style={{fill: "#ffffff"}}><path d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z"></path><path d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z"></path></svg>Contactame</button>
                             </a>
                         </div>
                         <a href="https://onedrive.live.com/download?resid=D5DB82698276E2AD%2113724&authkey=!ALppv9_Z3Yf3KIM&em=2"><button type="button" className="text-orange-600 inline-flex items-center focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 bg-white hover:bg-gray-200 focus:outline-none focus:ring-orange-800"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 mr-2" viewBox="0 0 24 24" style={{fill: "#ff9b00"}}><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>Descargar CV</button>
