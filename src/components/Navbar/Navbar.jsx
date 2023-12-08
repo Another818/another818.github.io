@@ -1,13 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Typewriter from 'typewriter-effect';
 import "./Navbar.css";
 
 function Navbar() {
 
-    
+    const [header, setHeader] = useState("#ff900a")
+
+    const listenScrollEvent = () => {
+        if (window.scrollY < 73) {
+            return setHeader("#ff900a")
+        } else if (window.scrollY > 70) {
+            return setHeader("transparent")
+        } 
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent);
+
+        return () =>
+            window.removeEventListener('scroll', listenScrollEvent);
+    }, [listenScrollEvent]);
+
     return (
         <div>
-            <header className="bg-orange-500 w-full fixed z-50 py-3 mb-7 shadow-md">
+            <header className="w-full fixed z-50 py-3 mb-7 shadow-md" style={{backgroundColor: header}}>
                 <div className="container mx-auto flex items-center justify-between">
                     <a href="/" className="flex items-center">
                         <img src="/img/Logo.png" className="me-2" width={60} height={60} alt="Logo"/>

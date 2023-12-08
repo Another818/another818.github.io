@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import 'atropos/css'
+import Atropos from 'atropos/react';
 import './LightBox.css'
 const LightboxComponent = () => {
     const [lightboxVisible, setLightboxVisible] = useState(false);
@@ -15,8 +17,8 @@ const LightboxComponent = () => {
     };
 
     const handleLightboxClick = (e) => {
-        console.log()
         setLightboxVisible(!lightboxVisible);
+        console.log(lightboxVisible)
         handleClickImagen(e.target.attributes[0].textContent)
         handleClickFigura(e.target.nextElementSibling.outerText)
     };
@@ -73,14 +75,22 @@ const LightboxComponent = () => {
 
             {
                 lightboxVisible && (
-                    <div className="imagen-light">
+                    <div className="imagen-light z-[1000]">
                         <img src="/img/bxClose.svg" alt="" className="close" onClick={() => setLightboxVisible(false)}/>
-                        <div className="cuadrado-blanco h-3/4 w-11/12 flex items-center justify-between p-5 bg-white rounded-xl">
-                            <img src={lightboxImage} alt="Virtud" className="w-3/5 md:w-2/5 lg:w-2/5 xl:w-3/5"/>
-                            <p>{lightboxText}</p>
+                        <div className='ml-28'>
+                            <Atropos
+                                rotate={true}
+                                shadowScale={1.05}
+                                className='h-auto mx-auto shadow-2xl rounded-2xl [box-sizing:border-box]'
+                            >
+                                <div className="cuadrado-blanco h-3/4 flex items-center justify-between w-11/12 p-5 bg-white rounded-xl" data-atropos-offset="0">
+                                    <img src={lightboxImage} alt="Virtud" className="w-3/5 md:w-2/5 lg:w-2/5 xl:w-3/5"/>
+                                    <p>{lightboxText}</p>   
+                                </div>
+                                
+                            </Atropos>
                         </div>
                     </div>
-
                 )
             }
         {/* Resto de tu componente */}
