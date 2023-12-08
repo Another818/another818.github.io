@@ -1,10 +1,50 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { LightboxComponent, TablasComponent, Navbar, SimpleSliders } from './components/index'
 import 'boxicons';
 import './App.css'
 import 'animate.css';
 
 function App() {
+    const [links, setLinks] = useState([
+        { id: 'git1', url: "https://api.github.com/repos/Another818/AsistenteVirtual" },
+        { id: 'git2', url: "https://api.github.com/repos/Another818/Proyecto_6" },
+        { id: 'git3', url: "https://api.github.com/repos/Another818/crud-asp-net" },
+        { id: 'git4', url: "https://api.github.com/repos/Another818/django-crud-react" }
+    ]);
+
+    useEffect(() => {
+        links.forEach(link => {
+        fetch(link.url)
+            .then(res => res.json())
+            .then(response => {
+                const linkElement = document.getElementById(link.id);
+                if (linkElement) {
+                    linkElement.href = response.html_url;
+                }
+            })
+            .catch(error => {
+            console.log(`Error fetching ${link.id} link:`, error);
+            });
+        });
+
+        fetch("https://api.github.com/users/Another818")
+        .then(res => res.json())
+        .then(response => {
+            const imgPerfil = document.getElementById('ImgPerfil')
+            const nomPerfil = document.getElementById('n-perfil')
+                
+            if (imgPerfil) {
+                imgPerfil.src = response.avatar_url;
+            }
+            if (nomPerfil) {
+                nomPerfil.textContent = response.name;
+            }
+        })
+        .catch(error => {
+            console.log('Error fetching user info:', error);
+        });
+    }, []);
+
 
     return (
         <>

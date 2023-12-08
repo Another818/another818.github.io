@@ -136,7 +136,12 @@ const TablasComponent = () => {
                     </thead>
                     <tbody>
                         <tr className="hover:bg-slate-600 text-slate-300">
-                            <td className="p-5 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 mr-2 rounded-full bg-white" width="20" height="20" viewBox="0 0 24 24" style={{fill: "white"}}><path d="M12 14h6v2h-6zM6.293 9.707 8.586 12l-2.293 2.293 1.414 1.414L11.414 12 7.707 8.293z"></path><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 18V6h16l.002 12H4z"></path></svg> Argentina Programa</td>
+                            <td className="p-5 flex items-center">
+                                <div className='h-8 w-8 mr-2 rounded-full flex justify-center items-center bg-white'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 14h6v2h-6zM6.293 9.707 8.586 12l-2.293 2.293 1.414 1.414L11.414 12 7.707 8.293z"></path><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 18V6h16l.002 12H4z"></path></svg>
+                                </div>     
+                                Argentina Programa
+                            </td>
                             <td className="p-5">Fundamentos de programación</td>
                             <td className="p-5">2022-06-09</td>
                             <td className="p-3"><a href="https://mumuki.io/argentina-programa/certificates/verify/_0W4djGSfEp88BW-" target="_blank" rel='noreferrer'>Acceder a credencial</a></td>
@@ -145,19 +150,29 @@ const TablasComponent = () => {
                 </table>
             </div>
 
-            <div id="tecnologias" className="tablas mx-auto rounded-xl shadow-md bg-gray-700 hidden" tabIndex="0">
+            <div id="tecnologias" className="tablas mx-auto rounded-xl shadow-md bg-gray-700 hidden">
                 <table className="table-auto rounded-xl w-full bg-slate-800 text-slate-200 text-sm shadow-sm">
                     <tbody>
                         <tr>
                             <td className="hover:bg-slate-600 p-4">
-                                <div className="flex gap-2 items-center">
-                                    <box-icon type="logo" name="python" color='#ffffff'></box-icon> Python
-                                </div> 
+                                <div className='flex items-center gap-2'>
+                                    <div className="text-center">
+                                        <box-icon type="logo" name="python" color='#ffffff'></box-icon> 
+                                    </div>
+                                    <div>
+                                        Python
+                                    </div>
+                                </div>
                             </td>
                             <td className="hover:bg-slate-600 p-4">
-                                <div className="flex items-center gap-2">
-                                    <box-icon type="logo" name="django" color='#ffffff'></box-icon>Django
-                                </div> 
+                                <div className='flex items-center gap-2'>
+                                    <div className="text-center">
+                                        <box-icon type="logo" name="django" color='#ffffff'></box-icon>
+                                    </div>
+                                    <div>
+                                        Django
+                                    </div>
+                                </div>
                             </td>
                             <td className="hover:bg-slate-600 p-4">
                                 <div className="flex items-center gap-2">
@@ -165,21 +180,36 @@ const TablasComponent = () => {
                                 </div> 
                             </td>
                             <td className="hover:bg-slate-600 p-4">
-                                <div className="flex items-center gap-2">
-                                    <box-icon name='git' type='logo' color='#ffffff' ></box-icon>GIT
-                                </div> 
+                                <div className='flex items-center gap-2'>
+                                    <div className="text-center">
+                                        <box-icon name='git' type='logo' color='#ffffff' ></box-icon>
+                                    </div>
+                                    <div>
+                                        GIT
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
                             <td className="hover:bg-slate-600 p-4">
-                                <div className="flex items-center gap-2">
-                                    <box-icon name='javascript' type='logo' color='#ffffff' ></box-icon>JavaScript
-                                </div> 
+                                <div className='flex items-center gap-2'>
+                                    <div className="text-center">
+                                        <box-icon name='javascript' type='logo' color='#ffffff' ></box-icon>
+                                    </div>
+                                    <div>
+                                        JavaScript
+                                    </div>
+                                </div>
                             </td>
                             <td className="hover:bg-slate-600 p-4">
-                                <div className="flex items-center gap-2">
-                                    <box-icon name='react' type='logo' color='#ffffff' ></box-icon>React
-                                </div> 
+                                <div className='flex items-center gap-2'>
+                                    <div className="text-center">
+                                        <box-icon name='react' type='logo' color='#ffffff' ></box-icon>
+                                    </div>
+                                    <div>
+                                        React
+                                    </div>
+                                </div>
                             </td>
                             <td className="hover:bg-slate-600 p-4">
                                 <div className="flex items-center gap-2">
@@ -187,9 +217,14 @@ const TablasComponent = () => {
                                 </div> 
                             </td>
                             <td className="hover:bg-slate-600 p-4">
-                                <div className="flex items-center gap-2">
-                                    <box-icon name='tailwind-css' type='logo' color='#ffffff' ></box-icon>TailwindCSS
-                                </div> 
+                                <div className='flex items-center gap-2'>
+                                    <div className="text-center">
+                                        <box-icon name='tailwind-css' type='logo' color='#ffffff' ></box-icon>
+                                    </div>
+                                    <div>
+                                        TailwindCSS
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
