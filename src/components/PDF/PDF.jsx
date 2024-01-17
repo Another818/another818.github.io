@@ -216,7 +216,7 @@ function PDF() {
                         <Text style={styles.parragraph_2}>• Inglés: Lee - Escribe (Actualmente realizando cursos)</Text>
                     </View>
                     <View style={styles.qr_box}>
-                        <Image src="/img/qrcode.png" style={styles.image_qr}/>
+                        <Image src="https://pablotomasmenna.com.ar/img/qrcode.png" style={styles.image_qr}/>
                     </View>
                 </Page>
             </Document>
