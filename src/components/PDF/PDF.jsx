@@ -133,6 +133,7 @@ function PDF() {
         .then(response => {
             setImgPerfil(response.avatar_url)
         })
+
        /*  <Image src={imgPerfil} style={styles.image}/> */
         return (
             <Document>
@@ -215,7 +216,7 @@ function PDF() {
                         <Text style={styles.parragraph_2}>• Inglés: Lee - Escribe (Actualmente realizando cursos)</Text>
                     </View>
                     <View style={styles.qr_box}>
-                        <Image src="/img/qrcode.png" style={styles.image_qr}/>
+                        <Image src="img/qr_code.svg" style={styles.image_qr}/>
                     </View>
                 </Page>
             </Document>
