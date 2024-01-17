@@ -140,11 +140,22 @@ const TablasComponent = () => {
                                 <div className='h-8 w-8 mr-2 rounded-full flex justify-center items-center bg-white'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 14h6v2h-6zM6.293 9.707 8.586 12l-2.293 2.293 1.414 1.414L11.414 12 7.707 8.293z"></path><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 18V6h16l.002 12H4z"></path></svg>
                                 </div>     
-                                Argentina Programa
+                                Argentina Programa (1° Etapa)
                             </td>
                             <td className="p-5">Fundamentos de programación</td>
                             <td className="p-5">2022-06-09</td>
                             <td className="p-3"><a href="https://mumuki.io/argentina-programa/certificates/verify/_0W4djGSfEp88BW-" target="_blank" rel='noreferrer'>Acceder a credencial</a></td>
+                        </tr>
+                        <tr className="hover:bg-slate-600 text-slate-300">
+                            <td className="p-5 flex items-center">
+                                <div className='h-8 w-8 mr-2 rounded-full flex justify-center items-center bg-white'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 14h6v2h-6zM6.293 9.707 8.586 12l-2.293 2.293 1.414 1.414L11.414 12 7.707 8.293z"></path><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 18V6h16l.002 12H4z"></path></svg>
+                                </div>     
+                                Argentina Programa 4.0 (2° Etapa)
+                            </td>
+                            <td className="p-5">Desarrollo web con React JS</td>
+                            <td className="p-5">2023-12-01</td>
+                            <td className="p-3"><a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:62cad600-efd3-4c08-8a5b-81ba358839ca" target="_blank" rel='noreferrer'>Acceder a credencial</a></td>
                         </tr>
                     </tbody>
                 </table>
