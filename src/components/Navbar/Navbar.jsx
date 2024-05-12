@@ -8,6 +8,7 @@ function Navbar() {
 
     const [header, setHeader] = useState("#ff900a")
     const [pdfVisible, setPdfVisible] = useState(false)
+    const [menuVisible, setMenuVisible] = useState(false)
 
     const pruebaConsoleEnter = () =>{
         setPdfVisible(true)
@@ -15,6 +16,16 @@ function Navbar() {
     
     const pruebaConsoleLeave = () =>{
         setPdfVisible(false)
+    }
+
+    const handleMenu = () => {
+        if(menuVisible === false){
+            console.log(menuVisible)
+            setMenuVisible(true)
+        }else{
+            console.log(menuVisible)
+            setMenuVisible(false)
+        }
     }
 
     const listenScrollEvent = () => {
@@ -42,7 +53,8 @@ function Navbar() {
                     </a>
 
                     <div className="md:flex items-center space-x-4">
-                        <ul className="flex items-center space-x-4">
+                        
+                        <ul className="flex items-center space-x-4 max-md:hidden mx-5">
                             <li className="">
                                 <a className="text-white" aria-current="page" href="#portafolio">Proyectos</a>
                             </li>
@@ -53,6 +65,35 @@ function Navbar() {
                                 <a className="text-white" href="#contacto">Contacto</a>
                             </li>
                         </ul>
+                        <div className='relative'>
+                            <div className="mr-5 flex md:hidden">
+                                <button className="bottom-16 z-50 bg-orange-600 text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium md:hidden" onClick={handleMenu}>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        className="h-6 w-6 mr-1"
+                                        fill="currentColor"
+                                        >
+                                        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            {
+                            menuVisible 
+                            &&
+                            <div className="absolute top-12 bottom-12 right-1 z-50 shadow-md md:hidden">
+                                <div className="px-2 pt-2 pb-3 sm:px-3 bg-orange-500 rounded-lg">
+                                    <a href="#" className="block text-gray-300 hover:bg-orange-300 hover:text-white px-3 py-2 rounded-md text-base font-medium" onClick={handleMenu}>Inicio</a>
+                                    <a href="#portafolio" className="block text-gray-300 hover:bg-orange-300 hover:text-white px-3 py-2 rounded-md text-base font-medium" onClick={handleMenu}>Portafolio</a>
+                                    <a href="#sobre_mi" className="block text-gray-300 hover:bg-orange-300 hover:text-white px-3 py-2 rounded-md text-base font-medium" onClick={handleMenu}>Sobre Mí</a>
+                                    <a href="#contacto" className="block text-gray-300 hover:bg-orange-300 hover:text-white px-3 py-2 rounded-md text-base font-medium" onClick={handleMenu}>Contacto</a>
+                                </div>
+                            </div>
+                        }
+                        </div>
+
                     </div>
                 </div>
             </header>

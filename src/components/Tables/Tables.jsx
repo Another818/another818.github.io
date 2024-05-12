@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import { useState, useEffect} from 'react';
 import 'boxicons';
 
 const TablasComponent = () => {
@@ -46,7 +46,7 @@ const TablasComponent = () => {
 
     return (
         <>
-            <div className="flex justify-center overflow-x-auto text-sm font-medium text-center text-gray-400 mb-6" role="tablist" aria-orientation="horizontal">
+            <div className="flex justify-center overflow-x-auto text-sm font-medium text-center text-gray-400 mb-6 " role="tablist" aria-orientation="horizontal">
 
                 <button className="inline-flex items-center justify-center p-4 border-b-2 rounded-t-lg group text-orange-500 border-orange-500 activate" id="btn-experiencia" onClick={handleButtonClick('experiencia', 'btn-experiencia')} type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 mr-2" height="30px" width="30px" fill="currentColor" viewBox="0 0 512 512">
@@ -86,7 +86,7 @@ const TablasComponent = () => {
                 </button>
             </div>
 
-            <div id="experiencia" className="tablas mx-auto rounded-xl bg-gray-700">
+            <div id="experiencia" className="tablas mx-auto">
                 <table className="table-auto rounded-xl w-full bg-slate-800 text-sm shadow-sm">
                     <tbody>
                         <tr>
@@ -95,163 +95,171 @@ const TablasComponent = () => {
                     </tbody>
                 </table>
             </div>
-            <div id="educacion" className="tablas mx-auto rounded-xl bg-gray-700">
-                <table className="table-auto rounded-xl w-full bg-slate-800 text-sm shadow-sm">
-                    <thead className="uppercase text-slate-200">
-                        <tr>
-                            <th className="w-1/2 font-semibold p-4 text-left">INSTITUCIÓN</th>
-                            <th className="w-1/2 font-semibold p-4 text-left">TÍTULO</th>
-                            <th className="w-1/2 font-semibold p-4 text-left">AÑO INGRESO</th>
-                            <th className="w-1/2 font-semibold p-4 text-left">AÑO FINALIZADO</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr className="hover:bg-slate-600 text-slate-300">
-                            <td className="flex items-center p-4"><img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2 rounded-full bg-white" src="/img/proa.svg"/> Escuelas ProA</td>
-                            <td className="p-4">Bachiller en Desarrollo de Software</td>
-                            <td className="p-4">2015</td>
-                            <td className="p-4">2021</td>
-                        </tr>
-                        <tr className="hover:bg-slate-600 hover:rounded-lg text-slate-300">
-                            <td className="flex items-center p-4">
-                                <img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2 rounded-full bg-white" src="/img/utn.svg"/>
-                                    Universidad Tecnológica Nacional
-                            </td>                                                                                                         
-                            <td className="p-4">Ingeniero en Sistemas de Información</td>
-                            <td className="p-4">2021</td>
-                            <td className="p-4">-</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div id="certificados" className="tablas mx-auto rounded-xl shadow-md bg-gray-700">
-                <table className="table-auto rounded-xl w-full bg-slate-800 text-sm shadow-sm">
-                    <thead className= "uppercase text-slate-200">
-                        <tr>
-                            <th className="w-1/2 font-semibold p-4 text-left">EMISOR</th>
-                            <th className="w-1/2 font-semibold p-4 text-left">DESCRIPCIÓN</th>
-                            <th className="w-1/2 font-semibold p-4 text-left">EXPEDICIÓN</th>
-                            <th className="w-1/2 font-semibold p-4 text-left">CREDENCIAL</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr className="hover:bg-slate-600 text-slate-300">
-                            <td className="p-5 flex items-center">
-                                <div className='h-8 w-8 mr-2 rounded-full flex justify-center items-center bg-white'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 14h6v2h-6zM6.293 9.707 8.586 12l-2.293 2.293 1.414 1.414L11.414 12 7.707 8.293z"></path><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 18V6h16l.002 12H4z"></path></svg>
-                                </div>     
-                                Argentina Programa (1° Etapa)
-                            </td>
-                            <td className="p-5">Fundamentos de programación</td>
-                            <td className="p-5">2022-06-09</td>
-                            <td className="p-3"><a href="https://mumuki.io/argentina-programa/certificates/verify/_0W4djGSfEp88BW-" target="_blank" rel='noreferrer'>Acceder a credencial</a></td>
-                        </tr>
-                        <tr className="hover:bg-slate-600 text-slate-300">
-                            <td className="p-5 flex items-center">
-                                <img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2 rounded-full bg-white" src="/img/utn.svg"/>
-                                Desarrollo Full Stack .NET
-                            </td>
-                            <td className="p-5">Desarrollo Full Stack .NET - Nivel Intermedio</td>
-                            <td className="p-5">2023-09-24</td>
-                            <td className="p-3"><a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:144c3fa1-fd0f-413a-b29f-e3066ac505af" target="_blank" rel='noreferrer'>Acceder a credencial</a></td>
-                        </tr>
-                        <tr className="hover:bg-slate-600 text-slate-300">
-                            <td className="p-5 flex items-center">
-                                <div className='h-8 w-8 mr-2 rounded-full flex justify-center items-center bg-white'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 14h6v2h-6zM6.293 9.707 8.586 12l-2.293 2.293 1.414 1.414L11.414 12 7.707 8.293z"></path><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 18V6h16l.002 12H4z"></path></svg>
-                                </div>     
-                                Argentina Programa 4.0 (2° Etapa)
-                            </td>
-                            <td className="p-5">Desarrollo web con React JS</td>
-                            <td className="p-5">2023-12-01</td>
-                            <td className="p-3"><a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:62cad600-efd3-4c08-8a5b-81ba358839ca" target="_blank" rel='noreferrer'>Acceder a credencial</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div id="educacion" className="tablas mx-auto">
+                <div className='flex justify-center'>
+                    <table className="table-auto rounded-xl lg:w-3/4 xl:w-full bg-slate-800 text-sm shadow-sm">
+                        <thead className="uppercase text-slate-200">
+                            <tr>
+                                <th className="w-1/2 font-semibold p-4 text-left">INSTITUCIÓN</th>
+                                <th className="w-1/2 font-semibold p-4 text-left">TÍTULO</th>
+                                <th className="w-1/2 font-semibold p-4 text-left">AÑO INGRESO</th>
+                                <th className="w-1/2 font-semibold p-4 text-left">AÑO FINALIZADO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr className="hover:bg-slate-600 text-slate-300">
+                                <td className="flex items-center p-4"><img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2 rounded-full bg-white" src="/img/proa.svg"/> Escuelas ProA</td>
+                                <td className="p-4">Bachiller en Desarrollo de Software</td>
+                                <td className="p-4">2015</td>
+                                <td className="p-4">2021</td>
+                            </tr>
+                            <tr className="hover:bg-slate-600 hover:rounded-lg text-slate-300">
+                                <td className="flex items-center p-4">
+                                    <img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2 rounded-full bg-white" src="/img/utn.svg"/>
+                                        Universidad Tecnológica Nacional
+                                </td>                                                                                                         
+                                <td className="p-4">Ingeniero en Sistemas de Información</td>
+                                <td className="p-4">2021</td>
+                                <td className="p-4">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
-            <div id="tecnologias" className="tablas mx-auto rounded-xl shadow-md bg-gray-700 hidden">
-                <table className="table-auto rounded-xl w-full bg-slate-800 text-slate-200 text-sm shadow-sm">
-                    <tbody>
-                        <tr>
-                            <td className="hover:bg-slate-600 p-4">
-                                <div className='flex items-center gap-2'>
-                                    <div className="text-center">
-                                        <box-icon type="logo" name="python" color='#ffffff'></box-icon> 
-                                    </div>
-                                    <div>
-                                        Python
-                                    </div>
-                                </div>
-                            </td>
-                            <td className="hover:bg-slate-600 p-4">
-                                <div className='flex items-center gap-2'>
-                                    <div className="text-center">
-                                        <box-icon type="logo" name="django" color='#ffffff'></box-icon>
-                                    </div>
-                                    <div>
-                                        Django
-                                    </div>
-                                </div>
-                            </td>
-                            <td className="hover:bg-slate-600 p-4">
-                                <div className="flex items-center gap-2">
-                                    <img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2" src="/img/mysql.svg"/> MySql
-                                </div> 
-                            </td>
-                            <td className="hover:bg-slate-600 p-4">
-                                <div className='flex items-center gap-2'>
-                                    <div className="text-center">
-                                        <box-icon name='git' type='logo' color='#ffffff' ></box-icon>
-                                    </div>
-                                    <div>
-                                        GIT
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="hover:bg-slate-600 p-4">
-                                <div className='flex items-center gap-2'>
-                                    <div className="text-center">
-                                        <box-icon name='javascript' type='logo' color='#ffffff' ></box-icon>
-                                    </div>
-                                    <div>
-                                        JavaScript
-                                    </div>
-                                </div>
-                            </td>
-                            <td className="hover:bg-slate-600 p-4">
-                                <div className='flex items-center gap-2'>
-                                    <div className="text-center">
-                                        <box-icon name='react' type='logo' color='#ffffff' ></box-icon>
-                                    </div>
-                                    <div>
-                                        React
-                                    </div>
-                                </div>
-                            </td>
-                            <td className="hover:bg-slate-600 p-4">
-                                <div className="flex items-center gap-2">
-                                    <img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2" src="/img/c-sharp.svg"/> C#
-                                </div> 
-                            </td>
-                            <td className="hover:bg-slate-600 p-4">
-                                <div className='flex items-center gap-2'>
-                                    <div className="text-center">
-                                        <box-icon name='tailwind-css' type='logo' color='#ffffff' ></box-icon>
-                                    </div>
-                                    <div>
-                                        TailwindCSS
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div id="certificados" className="tablas mx-auto">
+            <div className='flex justify-center'>
+                    <table className="table-auto rounded-xl lg:w-3/4 xl:w-full bg-slate-800 text-sm shadow-sm">
+                        <thead className= "uppercase text-slate-200">
+                            <tr>
+                                <th className="w-1/2 font-semibold p-4 text-left">EMISOR</th>
+                                <th className="w-1/2 font-semibold p-4 text-left">DESCRIPCIÓN</th>
+                                <th className="w-1/2 font-semibold p-4 text-left">EXPEDICIÓN</th>
+                                <th className="w-1/2 font-semibold p-4 text-left">CREDENCIAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr className="hover:bg-slate-600 text-slate-300">
+                                <td className="p-5 flex items-center">
+                                    <div className='h-8 w-8 mr-2 rounded-full flex justify-center items-center bg-white'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 14h6v2h-6zM6.293 9.707 8.586 12l-2.293 2.293 1.414 1.414L11.414 12 7.707 8.293z"></path><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 18V6h16l.002 12H4z"></path></svg>
+                                    </div>     
+                                    Argentina Programa (1° Etapa)
+                                </td>
+                                <td className="p-5">Fundamentos de programación</td>
+                                <td className="p-5">2022-06-09</td>
+                                <td className="p-3"><a href="https://mumuki.io/argentina-programa/certificates/verify/_0W4djGSfEp88BW-" target="_blank" rel='noreferrer'>Acceder a credencial</a></td>
+                            </tr>
+                            <tr className="hover:bg-slate-600 text-slate-300">
+                                <td className="p-5 flex items-center">
+                                    <img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2 rounded-full bg-white" src="/img/utn.svg"/>
+                                    Desarrollo Full Stack .NET
+                                </td>
+                                <td className="p-5">Desarrollo Full Stack .NET - Nivel Intermedio</td>
+                                <td className="p-5">2023-09-24</td>
+                                <td className="p-3"><a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:144c3fa1-fd0f-413a-b29f-e3066ac505af" target="_blank" rel='noreferrer'>Acceder a credencial</a></td>
+                            </tr>
+                            <tr className="text-slate-300 hover:bg-slate-600 hover:rounded-b-xl transition-all duration-300">
+                                <td className="p-5 flex items-center">
+                                    <div className='h-8 w-8 mr-2 rounded-full flex justify-center items-center bg-white'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 14h6v2h-6zM6.293 9.707 8.586 12l-2.293 2.293 1.414 1.414L11.414 12 7.707 8.293z"></path><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 18V6h16l.002 12H4z"></path></svg>
+                                    </div>     
+                                    Argentina Programa 4.0 (2° Etapa)
+                                </td>
+                                <td className="p-5">Desarrollo web con React JS</td>
+                                <td className="p-5">2023-12-01</td>
+                                <td className="p-3"><a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:62cad600-efd3-4c08-8a5b-81ba358839ca" target="_blank" rel='noreferrer'>Acceder a credencial</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
-            <div id="idiomas" className="tablas mx-auto rounded-xl bg-gray-700">
+            <div id="tecnologias" className="tablas mx-auto">
+                <div className='flex justify-center'>
+                    <table className="table-auto rounded-xl lg:w-3/4 xl:w-full bg-slate-800 text-sm shadow-sm">
+                        <tbody className='text-white'>
+                            <tr>
+                                <td className="hover:bg-slate-600 p-4">
+                                    <div className='flex items-center gap-2'>
+                                        <div className="text-center">
+                                            <box-icon type="logo" name="python" color='#ffffff'></box-icon> 
+                                        </div>
+                                        <div>
+                                            Python
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="hover:bg-slate-600 p-4">
+                                    <div className='flex items-center gap-2'>
+                                        <div className="text-center">
+                                            <box-icon type="logo" name="django" color='#ffffff'></box-icon>
+                                        </div>
+                                        <div>
+                                            Django
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="hover:bg-slate-600 p-4">
+                                    <div className="flex items-center gap-2">
+                                        <img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2" src="/img/mysql.svg"/> MySql
+                                    </div> 
+                                </td>
+                                <td className="hover:bg-slate-600 p-4">
+                                    <div className='flex items-center gap-2'>
+                                        <div className="text-center">
+                                            <box-icon name='git' type='logo' color='#ffffff' ></box-icon>
+                                        </div>
+                                        <div>
+                                            GIT
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="hover:bg-slate-600 p-4">
+                                    <div className='flex items-center gap-2'>
+                                        <div className="text-center">
+                                            <box-icon name='javascript' type='logo' color='#ffffff' ></box-icon>
+                                        </div>
+                                        <div>
+                                            JavaScript
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="hover:bg-slate-600 p-4">
+                                    <div className='flex items-center gap-2'>
+                                        <div className="text-center">
+                                            <box-icon name='react' type='logo' color='#ffffff' ></box-icon>
+                                        </div>
+                                        <div>
+                                            React
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="hover:bg-slate-600 p-4">
+                                    <div className="flex items-center gap-2">
+                                        <img alt="" loading="lazy" width="100" height="100" className="h-8 w-8 mr-2" src="/img/c-sharp.svg"/> C#
+                                    </div> 
+                                </td>
+                                <td className="hover:bg-slate-600 p-4">
+                                    <div className='flex items-center gap-2'>
+                                        <div className="text-center">
+                                            <box-icon name='tailwind-css' type='logo' color='#ffffff' ></box-icon>
+                                        </div>
+                                        <div>
+                                            TailwindCSS
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+
+            <div id="idiomas" className="tablas mx-auto rounded-xl">
                 <table className="table-auto rounded-xl w-full text-slate-300 bg-slate-800 text-sm shadow-sm">
                     <tbody>
                         <tr>

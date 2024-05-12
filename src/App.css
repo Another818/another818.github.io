@@ -202,9 +202,6 @@ box-icon{
 }
 
 @media screen and (max-width:768px){
-  .menu-navegacion{
-      width: 50vw;
-  }
 
   .titulo{
       font-size: 40px;
@@ -223,14 +220,6 @@ box-icon{
       object-fit: cover;
       max-height: calc(100% - 40px);
       border-radius: 10px;
-  }
-
-  .close{
-      position: absolute;
-      top: 0px;
-      right: 5px;
-      width: 40px;
-      cursor: pointer;
   }
 
   .texto-imagen {
@@ -282,15 +271,7 @@ box-icon{
   
 }
 
-@media screen and (max-width:500px){
-  .menu-navegacion{
-      width: 65vw;
-  }
-
-  .menu{
-      top: 20px;
-      right: 20px;
-  }
+@media screen and (max-width:640px){
 
   .cuadrado-blanco {
       height: 90%;
@@ -298,6 +279,13 @@ box-icon{
       flex-direction: column;
       justify-content: center;
   }
+  .close{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 40px;
+    cursor: pointer;
+}
 
   .agregar-imagen {
       height: auto; 

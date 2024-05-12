@@ -52,7 +52,7 @@ function App() {
 
             <main className='mb-36'>
                 <section className="" id="portafolio">
-                    <div className="container md:max-w-screen-lg lg:max-w-screen-xl mx-auto my-8 px-20 pb-8"> 
+                    <div className="container md:max-w-screen-md lg:max-w-screen-xl mx-auto my-8 px-20 pb-8"> 
                         <h2 className="subtitulo pt-12">Proyectos</h2> 
                         <SimpleSliders/>
                     </div>
@@ -66,13 +66,13 @@ function App() {
                         <TablasComponent/>
                     </div>
 
-                    <div className="flex items-center justify-center flex-col-reverse sm:flex-row-reverse sm:items-center sm:justify-end">
+                    <div className="flex items-center justify-center flex-col-reverse md:flex-row-reverse md:items-center md:justify-end">
                         <section>
                             <LightboxComponent/>
                         </section>
                         <div className="cont-perfil">
                             <img src= "" id="ImgPerfil" className="imagen-perfil" alt="Imagen Perfil"/>
-                            <h3 className="n-perfil text-white" id="n-perfil"></h3>
+                            <h3 className="n-perfil text-white text-4xl" id="n-perfil"></h3>
                         </div>
                         
                     </div>
@@ -81,7 +81,6 @@ function App() {
             
             <footer className='bg-orange-200 w-full' id="contacto">
                 <div className="container flex flex-wrap justify-center md:justify-between items-center pt-14 xl:max-w-screen-xl mx-auto">
-
                     <div className="flex flex-col w-4/5 mb-10 text-center md:w-2/5 md:text-left text-white">
                         <h2 className="mb-4 px-5 text-2xl font-bold leading-none tracking-tight sm:text-4xl lg:text-5xl text-black">Pablo Tomás
                             <span className="text-orange-500 ml-2">Menna</span>
@@ -100,9 +99,8 @@ function App() {
                         <a href="https://www.instagram.com/aurorasoftware06/" target="_blank" rel='noreferrer' className="hover:bg-orange-400 inline-block ml-5 w-16 h-16 border-2 border-orange-500 rounded-full text-center animacion">
                             <box-icon type='logo' name='instagram'></box-icon>
                         </a>
-
                     </div>
-                    <div className="line"></div>
+                    <div className="line mt-7"></div>
                 </div>
             </footer>
         </>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import 'atropos/css'
 import Atropos from 'atropos/react';
 import './LightBox.css'
@@ -75,9 +75,9 @@ const LightboxComponent = () => {
 
             {
                 lightboxVisible && (
-                    <div className="imagen-light z-[1000]">
-                        <img src="/img/bxClose.svg" alt="" className="close" onClick={() => setLightboxVisible(false)}/>
-                        <div className='ml-28'>
+                    <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center imagen-light z-[1000]" >
+                        <img src="/img/bxClose.svg" alt="" className="close absolute sm:top-10 sm:right-12 sm:w-10 md:top-20 md:right-20 md:w-10 lg:top-20 lg:right-20 lg:w-10 cursor-pointer" onClick={() => setLightboxVisible(false)}/>
+                        <div className='mx-10'>
                             <Atropos
                                 rotate={true}
                                 shadowScale={1.05}
