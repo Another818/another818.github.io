@@ -2,98 +2,100 @@ import { useState } from 'react';
 import 'atropos/css'
 import Atropos from 'atropos/react';
 import './LightBox.css'
+
+const skills = [
+    {
+        id: 'coding',
+        title: 'Coding',
+        icon: '/img/Code Development.svg',
+        description: 'En mi enfoque de desarrollo de software, fusiono creatividad y precisión para dar vida a soluciones tecnológicas efectivas. A través de un proceso colaborativo, transformo ideas en código eficiente y escalable, buscando constantemente la excelencia en cada línea de código.'
+    },
+    {
+        id: 'teamwork',
+        title: 'Team Work',
+        icon: '/img/Team building.svg',
+        description: 'He experimentado el poder del trabajo en equipo. Colaborar con profesionales apasionados y comunicarse eficazmente nos ha permitido superar desafíos y ofrecer soluciones innovadoras.'
+    },
+    {
+        id: 'apis',
+        title: 'APIs',
+        icon: '/img/Artificial Intelligence.svg',
+        description: 'Tengo experiencia en el manejo de APIs, aprovechando su potencial para integrar servicios web y mejorar la funcionalidad de mis aplicaciones. He trabajado con diversas APIs realizando consultas, envío y recepción de datos.'
+    },
+    {
+        id: 'data',
+        title: 'Gestión de datos',
+        icon: '/img/Data and settings.svg',
+        description: 'Tengo experiencia en la gestión de datos, desde la recolección hasta el análisis. Utilizo técnicas avanzadas para garantizar la integridad y disponibilidad de los datos.'
+    }
+];
+
 const LightboxComponent = () => {
-    const [lightboxVisible, setLightboxVisible] = useState(false);
-    const [lightboxImage, setLightboxImage] = useState('');
-    const [lightboxText, setLightboxText] = useState('');
+    const [selectedSkill, setSelectedSkill] = useState(null);
 
-    const handleClickImagen = (imagen) => {
-        setLightboxImage(imagen);
-        setLightboxVisible(true);
-    };
-
-    const handleClickFigura = (contenido) => {
-        setLightboxText(contenido);
-    };
-
-    const handleLightboxClick = (e) => {
-        setLightboxVisible(!lightboxVisible);
-        console.log(lightboxVisible)
-        handleClickImagen(e.target.attributes[0].textContent)
-        handleClickFigura(e.target.nextElementSibling.outerText)
+    const handleSkillClick = (skill) => {
+        setSelectedSkill(skill);
     };
 
     return (
-        <div className='flex flex-wrap mr-5 items-center justify-evenly'>
-            <div className="cont-virtud animacion" onClick={handleLightboxClick}>
-                <figure className="myFigure">
-                    <img src="/img/Code Development.svg" alt="Development" className="img-virtud"/>
-                    <figcaption className="hidden text-white">En mi enfoque de desarrollo de software, 
-                        fusiono creatividad y precisión para dar vida a soluciones tecnológicas efectivas. 
-                        A través de un proceso colaborativo, transformo ideas en código eficiente y escalable, 
-                        buscando constantemente la excelencia en cada línea de código. Mi pasión por la 
-                        programación me impulsa a superar desafíos y entregar productos de calidad que 
-                        impulsen el éxito de los proyectos.
-                    </figcaption>
-                </figure>
-                <h3 className="n-virtud text-white">Coding</h3>
-            </div>
-            <div className="cont-virtud animacion" onClick={handleLightboxClick}>
-                <figure className="myFigure">
-                    <img src="/img/Team building.svg" alt="Team building" className="img-virtud"/>
-                    <figcaption className="hidden text-white">En mi trayectoria en el mundo del desarrollo de software, 
-                        he experimentado el poder del trabajo en equipo. Colaborar con profesionales apasionados 
-                        y comunicarse eficazmente nos ha permitido superar desafíos y ofrecer soluciones innovadoras. Creo firmemente que el trabajo en equipo potencia nuestras habilidades individuales y nos impulsa a alcanzar resultados excepcionales juntos.
-                    </figcaption>
-                </figure>
-                <h3 className="n-virtud text-white">Team Work</h3>
-            </div>
-            <div className="cont-virtud animacion" onClick={handleLightboxClick}>
-                <figure className="myFigure">
-                    <img src="/img/Artificial Intelligence.svg" alt="AI" className="img-virtud"/>
-                    <figcaption className="hidden text-white">Como desarrollador en el campo del desarrollo de 
-                        software, tengo experiencia en el manejo de APIs, aprovechando su potencial para 
-                        integrar servicios web y mejorar la funcionalidad de mis aplicaciones. He trabajado 
-                        con diversas APIs, realizando consultas, envío y recepción de datos, y automatizando 
-                        tareas. Esto me ha permitido crear soluciones eficientes y conectadas, brindando una 
-                        experiencia de usuario mejorada.
-                    </figcaption>
-                </figure>
-                <h3 className="n-virtud text-white">Manejo de APIS's</h3>
-            </div>
-            <div className="cont-virtud animacion" onClick={handleLightboxClick}>
-                <figure className="myFigure">
-                    <img src="/img/Data and settings.svg" alt="Data" className="img-virtud"/>
-                    <figcaption className="hidden text-white">Como desarrollador, tengo experiencia 
-                        en la gestión de datos, desde la recolección hasta el análisis. 
-                        Utilizo técnicas avanzadas para garantizar la integridad y disponibilidad 
-                        de los datos, desbloqueando su valor y permitiendo decisiones informadas.
-                    </figcaption>
-                </figure>
-                <h3 className="n-virtud text-white">Gestión de datos</h3>
-            </div>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-6 w-full'>
+            {skills.map((skill) => (
+                <div 
+                    key={skill.id}
+                    className="group glass-card p-10 cursor-pointer text-center hover:shadow-glow transition-all duration-300"
+                    onClick={() => handleSkillClick(skill)}
+                >
+                    <div className="mb-6 relative">
+                        <div className="absolute inset-0 bg-cyan-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <img 
+                            src={skill.icon} 
+                            alt={skill.title} 
+                            className="w-24 h-24 mx-auto relative z-10 transition-transform duration-300 group-hover:scale-110"
+                        />
+                    </div>
+                    <h3 className="text-cyan-400 font-semibold text-lg group-hover:text-cyan-300 transition-colors duration-300">
+                        {skill.title}
+                    </h3>
+                </div>
+            ))}
 
             {
-                lightboxVisible && (
+                selectedSkill && (
                     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center imagen-light z-[1000]" >
-                        <img src="/img/bxClose.svg" alt="" className="close absolute sm:top-10 sm:right-12 sm:w-10 md:top-20 md:right-20 md:w-10 lg:top-20 lg:right-20 lg:w-10 cursor-pointer" onClick={() => setLightboxVisible(false)}/>
-                        <div className='mx-10'>
+                        <div className="absolute inset-0 bg-navy-900/80 backdrop-blur-sm" onClick={() => setSelectedSkill(null)}></div>
+                        <button 
+                            className="absolute top-6 right-6 z-[1001] text-gray-400 hover:text-white transition-colors duration-200"
+                            onClick={() => setSelectedSkill(null)}
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                        <div className='mx-5 relative z-[1001] max-w-4xl w-full'>
                             <Atropos
                                 rotate={true}
                                 shadowScale={1.05}
-                                className='h-auto mx-auto shadow-2xl rounded-2xl [box-sizing:border-box]'
+                                className='h-auto mx-auto'
                             >
-                                <div className="cuadrado-blanco h-3/4 flex items-center justify-between w-11/12 p-5 bg-white rounded-xl" data-atropos-offset="0">
-                                    <img src={lightboxImage} alt="Virtud" className="w-3/5 md:w-2/5 lg:w-2/5 xl:w-3/5"/>
-                                    <p>{lightboxText}</p>   
+                                <div className="glass-card p-10 flex flex-col md:flex-row items-center gap-8" data-atropos-offset="0">
+                                    <div className="relative shrink-0">
+                                        <div className="absolute inset-0 bg-cyan-500/20 rounded-2xl blur-xl"></div>
+                                        <img 
+                                            src={selectedSkill.icon} 
+                                            alt={selectedSkill.title} 
+                                            className="w-40 h-40 relative z-10"
+                                        />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-3xl font-bold text-white mb-4">{selectedSkill.title}</h3>
+                                        <p className="text-gray-300 leading-relaxed text-lg">{selectedSkill.description}</p>
+                                    </div>
                                 </div>
-                                
                             </Atropos>
                         </div>
                     </div>
                 )
             }
-        {/* Resto de tu componente */}
         </div>
     );
 };

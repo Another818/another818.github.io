@@ -1,42 +1,6 @@
 import { Document, Page, Text, View, StyleSheet, Image } from '@react-pdf/renderer';
-import { useState } from "react";
 
-/* const styles = StyleSheet.create({
-    page: {
-        backgroundColor: "#E4E4E4",
-        padding: 30,
-    },
-    title: {
-        fontSize: 24,
-        textAlign: "center",
-        fontWeight: "bold",
-    },
-    image: {
-        marginRight: 10,
-        borderRadius: '50%',
-    },
-    section: {
-        display: "flex",
-        flexDirection: "row",
-        margin: 10,
-        padding: 10,
-    },
-    parragraph: {
-        fontSize: 12,
-        textAlign: "justify",
-        lineHeight: 1.5,
-        margin: 10,
-    },
-    pageNumber: {
-        position: "absolute",
-        fontSize: 12,
-        bottom: 30,
-        left: 0,
-        right: 0,
-        textAlign: "center",
-        color: "grey",
-    }
-}); */
+const AVATAR_URL = "https://avatars.githubusercontent.com/u/60326901";
 
 const styles = StyleSheet.create({
     page: {
@@ -125,17 +89,7 @@ const styles = StyleSheet.create({
 });
 
 function PDF() {
-
-    const [imgPerfil, setImgPerfil] = useState('')
-
-    fetch("https://api.github.com/users/Another818")
-        .then(res => res.json())
-        .then(response => {
-            setImgPerfil(response.avatar_url)
-        })
-
-       /*  <Image src={imgPerfil} style={styles.image}/> */
-        return (
+    return (
             <Document>
                 {/* Datos personales */}
                 <Page size="A4" style={styles.page}>
@@ -145,7 +99,7 @@ function PDF() {
                         </Text>
                     </View>
                     <View style={styles.section_row}>
-                        <Image src={imgPerfil} style={styles.image}/>
+                        <Image src={AVATAR_URL} style={styles.image}/>
                         <View style={styles.section_column}>
                             <View>
                                 <Text style={styles.title_h2}>Datos personales:</Text>
